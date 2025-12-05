@@ -19,3 +19,6 @@ let toChars (s: string) = s.ToCharArray()
 
 let isAllNumeric (s: string) =
     s |> toChars |> Array.forall Char.IsDigit
+
+let replace (oldValue: string) (newValue: string) (s: string) =
+    s.Replace(oldValue, newValue)
